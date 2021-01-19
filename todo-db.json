@@ -1,0 +1,17 @@
+
+{
+    "todos": [
+        {
+            "id": 1,
+            "name": "Cut Hair",
+            "due": 1,
+            "completed": 0
+        },
+        {
+            "id": 2,
+            "name": "Get Groceries",
+            "due": 1,
+            "completed": 0
+        }
+    ]
+} 
