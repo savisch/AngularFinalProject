@@ -1,0 +1,32 @@
+
+h1 {
+    text-align: center;
+}
+
+ol {
+    width: 40%;
+    margin: 0 auto;
+    /* padding-left: 42%; */
+    /* padding-right: 18%; */
+    list-style-type: none;
+    counter-reset: todo-item;
+    border: 1px solid red;
+}
+
+li {
+    width: 80%;
+    /* padding-left: 20px; */
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    border: 1px solid blue;
+}
+
+li::before {
+    counter-increment: todo-item;
+    content: "Item "counter(todo-item) ". ";
+    font-size: x-large;
+    font-weight: bolder;
+    margin-right: 8px;
+    margin-left: 10%;
+}
