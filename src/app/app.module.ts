@@ -7,6 +7,8 @@ import { DisplayTodoComponent } from './components/display-todo/display-todo.com
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import { EditTodoComponent } from './components/edit-todo/edit-todo.component';
 import { DetailTodoComponent } from './components/detail-todo/detail-todo.component';
+import { TodosService } from './services/todos.service';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { DetailTodoComponent } from './components/detail-todo/detail-todo.compon
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [TodosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
