@@ -1,1 +1,6 @@
-<p>display-todo works!</p>
+<h1><u>To Do List</u></h1>
+<ol>
+    <li *ngFor="let todo of todos">
+        <h2> {{ todo.name }}</h2>
+    </li>
+</ol>
