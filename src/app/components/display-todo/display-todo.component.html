@@ -1,8 +1,8 @@
 <h1><u>To Do List</u></h1>
 <ol>
     <li *ngFor="let todo of todos">
-        <h2> {{ todo.name }}</h2>
-        <button type="button">X</button>
+        <h2><a class= "todo-detail" routerLink="/detail"> {{ todo.name }} </a></h2>
+        <button type="button">&nbsp; X &nbsp;</button>
         <button type="button">Edit</button>
     </li>
 </ol>

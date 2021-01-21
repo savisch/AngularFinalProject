@@ -1,6 +1,10 @@
 
+
 h1 {
+    width: 60%;
+    margin: 40px auto 20px;
     text-align: center;
+    border: 1px solid green;
 }
 
 ol {
@@ -8,7 +12,7 @@ ol {
     margin: 0 auto;
     list-style-type: none;
     counter-reset: todo-item;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 li {
@@ -16,8 +20,19 @@ li {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    /* border: 1px solid blue; */
-    border-bottom: 1px solid grey;;
+    justify-content: flex-start;
+    border: 1px solid blue;
+    border-bottom: 1px solid grey;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    font-size: xx-large;
+    color: rgb(199, 124, 32);
 }
 
 li::before {
@@ -26,9 +41,25 @@ li::before {
     font-size: x-large;
     font-weight: bolder;
     margin-right: 8px;
-    margin-left: 10%;
+    margin-left: 35%;
 }
 
 button {
     margin-left: 8px;
+    background-color: blanchedalmond;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0px 0px 2px 1px  black inset;
+}
+
+button:hover {
+    background-color: rgb(199, 124, 32);
+    color: white;
+    font-size: large;
+    border: 1px dotted white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 1px  white inset;
+    padding: 8px;
 }
