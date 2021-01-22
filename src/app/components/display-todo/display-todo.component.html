@@ -2,7 +2,7 @@
 <ol>
     <li *ngFor="let todo of todos">
         <h2><a class= "todo-detail" routerLink="/detail"> {{ todo.name }} </a></h2>
-        <button type="button">&nbsp; X &nbsp;</button>
-        <button type="button">Edit</button>
+        <button (click)="deleteTodo(todo.id)">&nbsp; X &nbsp;</button>
+        <button routerLink="/edit">Edit</button>
     </li>
 </ol>
