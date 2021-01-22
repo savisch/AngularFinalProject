@@ -16,6 +16,12 @@ export class DisplayTodoComponent implements OnInit {
       gotten_todos => this.todos = gotten_todos)
   }
 
+  deleteTodo(id: number): void {
+    this.todoService.deleteTodo(id).subscribe(
+      todos => this.getTodos());
+    // alert("Delete" + id);
+  }
+
   constructor(private todoService: TodosService) { }
 
   ngOnInit(): void {
