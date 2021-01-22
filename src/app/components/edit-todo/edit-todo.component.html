@@ -1,1 +1,8 @@
-<p>edit-todo works!</p>
+<h2>Edit Todo</h2>
+Name: <input type="text" name="name" [(ngModel)]="editTodo.name">
+<br>
+Due: <input type="date" name="due" [(ngModel)]="editTodo.due">
+<br>
+ Details: <textarea name="details" id="details" cols="30" rows="10" [(ngModel)]="editTodo.details"></textarea> 
+<br>
+<button name="save-button" (click)="saveTodo()" routerLink="/display">Save</button>
