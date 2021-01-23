@@ -1,9 +1,13 @@
 <h2>Add Todo</h2>
-Name: <input type="text" name="name" [(ngModel)]="newTodo.name">
-<br>
-Due: <input type="date" name="due" [(ngModel)]="newTodo.due">
-<br>
- Details: <textarea name="details" id="details" cols="30" rows="10" [(ngModel)]="newTodo.details"></textarea> 
-<br>
-<button name="add-button" (click)="addTodo()" routerLink="/display">Add</button>
+<div id="form">
+    <input type="text" name="name" placeholder="Todo Name" [(ngModel)]="newTodo.name">
+    <br>
+    <label for="due">Due:</label>
+    <br>
+    <input type="date" name="due" [(ngModel)]="newTodo.due">
+    <br>
+    <textarea placeholder="Details/Notes" name="details" id="details" cols="30" rows="10" [(ngModel)]="newTodo.details"></textarea> 
+    <br>
+    <button name="add-button" (click)="addTodo()" routerLink="/display">Add</button>
+</div>
 
