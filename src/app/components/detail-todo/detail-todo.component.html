@@ -1,1 +1,18 @@
-<p>detail-todo works!</p>
+<h1>Todo Detail</h1>
+<ul>
+    <li id = "todo-name">
+        <p><span class="label">Name:</span>&nbsp;&nbsp;{{ detailTodo.name }}</p>
+    </li>
+    <li id = "todo-due">
+        <p><span class="label">Due:</span>&nbsp;&nbsp;{{ detailTodo.due }}</p>
+    </li>
+    <li id = "todo-name">
+        <p><span class="label">Notes:</span>&nbsp;&nbsp;{{ detailTodo.details }}</p>
+    </li>
+</ul>
+<div id="buttons">       
+    <button (click)="deleteTodo(detailTodo.id)" routerLink="/display">&nbsp; X &nbsp;</button>
+    <button [routerLink]="['/edit', detailTodo.id]">Edit</button>
+</div>
+
+
