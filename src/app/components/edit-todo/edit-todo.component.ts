@@ -13,7 +13,8 @@ export class EditTodoComponent implements OnInit {
   editId: any;
 
   saveTodo(){
-
+    this.todoService.editTodo(this.editTodo).subscribe(todos =>
+      this.todoService.getTodos())
   }
 
   constructor(private todoService: TodosService, private route: ActivatedRoute) { }
