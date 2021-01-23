@@ -4,7 +4,7 @@ h1 {
     width: 60%;
     margin: 40px auto 15px;
     text-align: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 ol {
@@ -12,7 +12,7 @@ ol {
     margin: 0 auto;
     list-style-type: none;
     counter-reset: todo-item;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 li {
@@ -21,7 +21,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     border-bottom: 1px solid grey;
 }
 

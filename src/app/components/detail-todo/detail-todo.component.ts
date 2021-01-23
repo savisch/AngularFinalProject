@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Todo } from 'src/app/models/todo';
+import { TodosService } from '../../services/todos.service';
 
 @Component({
   selector: 'app-detail-todo',
@@ -6,10 +9,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail-todo.component.css']
 })
 export class DetailTodoComponent implements OnInit {
+  detailTodo: Todo = new Todo();
+  detailId: any;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  getTodos(): void {
+    this.todoService.getTodos().subscribe(
+      gotten_todos => this.todoService.getTodos())
   }
 
+  deleteTodo(id: number): void {
+    this.todoService.deleteTodo(id).subscribe(
+      todos => this.getTodos());
+    }
+
+  constructor(private todoService: TodosService, private route: ActivatedRoute) { }
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(param => {
+      this.detailId = param.get('id')
+      this.todoService.getTodo(Number(this.detailId)).subscribe(gottenTodo => 
+        this.detailTodo = gottenTodo)
+    })
+  }
 }
