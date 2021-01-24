@@ -19,7 +19,6 @@ export class DisplayTodoComponent implements OnInit {
   deleteTodo(id: number): void {
     this.todoService.deleteTodo(id).subscribe(
       todos => this.getTodos());
-    // alert("Delete" + id);
   }
 
   constructor(private todoService: TodosService) { }

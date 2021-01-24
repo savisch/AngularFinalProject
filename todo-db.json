@@ -1,40 +1,18 @@
 {
   "todos": [
     {
+      "id": 2,
+      "name": "Get Groceries for Dinner",
+      "due": "2021-01-27",
+      "completed": 0,
+      "details": "Eggs, Bacon, bread, pickles, butter, meat, oat milk"
+    },
+    {
       "id": 1,
       "name": "Cut Hair",
-      "due": 1,
+      "due": "2021-01-24",
       "completed": 0,
       "details": "When I cut my hair I use a trimmer with #1 guard and also trim my beard."
-    },
-    {
-      "id": 2,
-      "name": "Get Groceries",
-      "due": 1,
-      "completed": 0,
-      "details": "Eggs, Bacon, bread, pickles, butter."
-    },
-    {
-      "name": "Make love to Marti",
-      "details": "I love my wife Marti more then anything in the world.",
-      "id": 3
-    },
-    {
-      "name": "Make love to Marti",
-      "details": "I love my wife. ",
-      "id": 4
-    },
-    {
-      "name": "Make love to Marti",
-      "due": "2021-01-28",
-      "details": "I adore my wife.",
-      "id": 5
-    },
-    {
-      "name": "Make love to Marti",
-      "due": "2021-01-06",
-      "details": "hhhhhhhh",
-      "id": 6
     }
   ]
 }

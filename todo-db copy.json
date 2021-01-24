@@ -1,19 +1,18 @@
-
 {
     "todos": [
-        {
-            "id": 1,
-            "name": "Cut Hair",
-            "due": 1,
-            "completed": 0,
-            "details": "When I cut my hair I use a trimmer with #1 guard and also trim my beard."
-        },
-        {
-            "id": 2,
-            "name": "Get Groceries",
-            "due": 1,
-            "completed": 0,
-            "details": "Eggs, Bacon, bread, pickles, butter."
-        }
+      {
+        "id": 2,
+        "name": "Get Groceries for Dinner",
+        "due": "2021-01-27",
+        "completed": 0,
+        "details": "Eggs, Bacon, bread, pickles, butter, meat, oat milk"
+      },
+      {
+        "id": 1,
+        "name": "Cut Hair",
+        "due": "2021-01-24",
+        "completed": 0,
+        "details": "When I cut my hair I use a trimmer with #1 guard and also trim my beard."
+      }
     ]
-} 
+  }

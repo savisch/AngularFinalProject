@@ -6,7 +6,7 @@ h1 {
 }
 
 ul {
-    width: 80%;
+    width: 70%;
     margin: 0 auto 20px;
     list-style-type: none;
     /* border: 1px solid grey; */
@@ -39,6 +39,7 @@ button {
     margin-left: 12px;
     background-color: blanchedalmond;
     padding: 5px;
+    font-size: 1.0vw;
     border: 1px solid grey;
     border-radius: 50%;
     text-decoration: none;
