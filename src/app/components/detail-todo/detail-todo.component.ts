@@ -12,15 +12,9 @@ export class DetailTodoComponent implements OnInit {
   detailTodo: Todo = new Todo();
   detailId: any;
 
-  getTodos(): void {
-    this.todoService.getTodos().subscribe(
-      gotten_todos => this.todoService.getTodos())
-  }
-
   deleteTodo(id: number): void {
-    this.todoService.deleteTodo(id).subscribe(
-      todos => this.getTodos());
-    }
+    this.todoService.deleteTodo(id).subscribe()
+  }
 
   constructor(private todoService: TodosService, private route: ActivatedRoute) { }
 
